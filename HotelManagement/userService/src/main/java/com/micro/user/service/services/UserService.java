@@ -3,6 +3,7 @@ package com.micro.user.service.services;
 
 import com.micro.user.service.entities.UserEntity;
 
+import java.io.IOException;
 import java.util.List;
 
 public interface UserService {
@@ -10,6 +11,6 @@ public interface UserService {
 
     List<UserEntity> getUsers();
 
-    UserEntity getUserById(String userId);
+    UserEntity getUserById(String userId) throws IOException;
 
 }
